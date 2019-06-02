@@ -1,0 +1,8 @@
+{
+  "plugins": ["@typescript-eslint", "prettier", "vue"],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser"
+  },
+  "extends": ["./eslint.base.json", "plugin:vue/recommended", "@vue/prettier", "@vue/typescript"]
+}
