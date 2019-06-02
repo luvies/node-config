@@ -54,7 +54,7 @@ You can then use the following config:
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "extends": "@luvies/config/eslint.base.json",
+  "extends": "./node_modules/@luvies/config/eslint.base.json",
   "env": {
     "es6": true,
     "node": true
@@ -79,7 +79,7 @@ You then need to extend the vue config:
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "extends": "@luvies/config/eslint.vue.json",
+  "extends": "./node_modules/@luvies/config/eslint.vue.json",
   "env": {
     "es6": true
   }
