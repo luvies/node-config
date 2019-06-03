@@ -45,6 +45,7 @@ To use with ESLint, you need to install the following packages:
 - `@typescript-eslint/eslint-plugin`
 - `eslint-plugin-prettier`
 - `eslint-config-prettier`
+- `eslint-plugin-sort-imports-es6-autofix`
 
 You can then use the following config:
 
