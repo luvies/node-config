@@ -52,6 +52,28 @@
     ],
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/member-naming": ["error", { "private": "^_" }],
+    "@typescript-eslint/member-ordering": [
+      "error",
+      {
+        "classes": [
+          "public-static-field",
+          "public-static-method",
+          "protected-static-field",
+          "protected-static-method",
+          "private-static-field",
+          "private-static-method",
+          "public-instance-field",
+          "protected-instance-field",
+          "private-instance-field",
+          "public-constructor",
+          "protected-constructor",
+          "private-constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
+    ],
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-for-in-array": "error",
     "@typescript-eslint/no-require-imports": "error",
