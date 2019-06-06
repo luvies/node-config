@@ -4,5 +4,8 @@
   "parserOptions": {
     "parser": "@typescript-eslint/parser"
   },
-  "extends": ["./eslint.base.json", "plugin:vue/recommended", "@vue/prettier", "@vue/typescript"]
+  "extends": ["./eslint.base.json", "plugin:vue/recommended", "@vue/prettier", "@vue/typescript"],
+  "rules": {
+    "curly": ["error", "all"]
+  }
 }
