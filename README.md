@@ -28,9 +28,11 @@ To use with TypeScript, you can use a config like the following:
 }
 ```
 
+TypeScript is only included as a peer dependency as it's much more version dependent.
+
 ### Prettier
 
-To use with prettier, you can use the following `.prettierrc`:
+Prettier is automatically included as a dependency with this package. Use the following `.prettierrc` to use the base config:
 
 ```json
 "@luvies/config/prettier.base.json"
@@ -38,7 +40,7 @@ To use with prettier, you can use the following `.prettierrc`:
 
 ### ESLint
 
-To use with ESLint, you need to install the following packages:
+ESLint and the supporting packages are automatically included as dependencies with the package. These are currently the packages that are used:
 
 - `eslint`
 - `@typescript-eslint/parser`
@@ -47,7 +49,7 @@ To use with ESLint, you need to install the following packages:
 - `eslint-config-prettier`
 - `eslint-plugin-sort-imports-es6-autofix`
 
-You can then use the following config:
+Use the following config to extend the shared one:
 
 ```json
 {
@@ -65,7 +67,7 @@ You can then use the following config:
 
 #### Vue
 
-For the Vue-specific config, you need the following packages as well:
+For the Vue-specific config, you need the following packages manually:
 
 - `eslint-plugin-vue`
 - `vue-eslint-parser`
