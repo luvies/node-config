@@ -6,6 +6,8 @@ This package provides a number of shared configs that can be reused across multi
 - ESLint (with TS rules)
 - Prettier
 
+All the base dependencies are given as peer dependencies to ensure packages are installed & to allow pushing update warnings by bumping the minimum versions.
+
 ## Usage
 
 ### TypeScript
@@ -32,7 +34,7 @@ TypeScript is only included as a peer dependency as it's much more version depen
 
 ### Prettier
 
-Prettier is automatically included as a dependency with this package. Use the following `.prettierrc` to use the base config:
+Use the following `.prettierrc` to use the base config:
 
 ```json
 "@luvies/config/prettier.base.json"
@@ -40,7 +42,7 @@ Prettier is automatically included as a dependency with this package. Use the fo
 
 ### ESLint
 
-ESLint and the supporting packages are automatically included as dependencies with the package. These are currently the packages that are used:
+These are currently the packages that are used (all are specified as peer dependencies):
 
 - `eslint`
 - `@typescript-eslint/parser`
@@ -67,7 +69,7 @@ Use the following config to extend the shared one:
 
 #### Vue
 
-For the Vue-specific config, you need the following packages manually:
+For the Vue-specific config, you need the following extra packages (they are not added as peer dependencies since only Vue projects will use them):
 
 - `eslint-plugin-vue`
 - `vue-eslint-parser`
