@@ -9,7 +9,6 @@
     "prettier/@typescript-eslint"
   ],
   "rules": {
-    "arrow-parens": ["error", "as-needed"],
     "curly": ["error", "all"],
     "max-classes-per-file": "error",
     "no-caller": "error",
