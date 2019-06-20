@@ -9,6 +9,7 @@
     "access": "public"
   },
   "files": [
+    "scripts",
     "eslint.base.json",
     "eslint.vue.json",
     "package.json",
