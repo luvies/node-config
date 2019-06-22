@@ -47,7 +47,8 @@
       "error",
       {
         "allowExpressions": true,
-        "allowTypedFunctionExpressions": true
+        "allowTypedFunctionExpressions": true,
+        "allowHigherOrderFunctions": true
       }
     ],
     "@typescript-eslint/interface-name-prefix": "off",
