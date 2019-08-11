@@ -67,6 +67,27 @@ Use the following config to extend the shared one:
 }
 ```
 
+#### React
+
+For the React-specific config, you need the following extra packages (they are not added as peer dependencies since only React projects will use them):
+
+- `eslint-plugin-react`
+
+You then need to extend the react config:
+
+```json
+{
+  "root": true,
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": "./node_modules/@luvies/config/eslint.react.json",
+  "env": {
+    "es6": true
+  }
+}
+```
+
 #### Vue
 
 For the Vue-specific config, you need the following extra packages (they are not added as peer dependencies since only Vue projects will use them):
