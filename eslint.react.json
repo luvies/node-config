@@ -5,6 +5,11 @@
       "jsx": true
     }
   },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "extends": ["./eslint.base.json", "plugin:react/recommended", "prettier/react"],
   "rules": {
     "react/button-has-type": "error",
