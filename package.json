@@ -11,6 +11,7 @@
   "files": [
     "scripts",
     "eslint.base.json",
+    "eslint.react.json",
     "eslint.vue.json",
     "package.json",
     "prettier.base.json",
