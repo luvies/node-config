@@ -8,7 +8,9 @@ if [ "$1" = "fix" ]; then
   FIX_ARGS="--fix"
 fi
 
-if [ -d "test" ]; then
+if [ ! -z "$2" ]; then
+  DIRS="$2"
+elif [ -d "test" ]; then
   DIRS="$DIRS test"
 fi
 
