@@ -1,6 +1,6 @@
 {
   "name": "@luvies/config",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A generic set of configs for all my node projects",
   "repository": "https://github.com/luvies/node-config",
   "author": "luvies",
