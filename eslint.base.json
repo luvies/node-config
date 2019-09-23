@@ -93,7 +93,6 @@
     "@typescript-eslint/no-floating-promises": "error",
     "@typescript-eslint/no-parameter-properties": "off",
     "@typescript-eslint/no-require-imports": "error",
-    "@typescript-eslint/no-unnecessary-condition": "error",
     "@typescript-eslint/no-useless-constructor": "error",
     "@typescript-eslint/prefer-for-of": "error"
   },
