@@ -28,7 +28,6 @@
     "no-new-func": "error",
     "no-new-wrappers": "error",
     "no-octal-escape": "error",
-    "no-param-reassign": "error",
     "no-return-assign": "error",
     "no-return-await": "error",
     "no-self-compare": "error",
