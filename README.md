@@ -18,10 +18,9 @@ To use with TypeScript, you can use a config like the following:
 {
   "extends": "@luvies/config/tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": ".",
+    "rootDir": "src",
     "outDir": "dist",
-    "module": "commonjs",
-    "rootDir": "src"
+    "module": "commonjs"
     // The base tsconfig defaults to es2018
     // "target": "es2017",
     // "lib": ["es2017"]
