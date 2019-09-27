@@ -17,7 +17,6 @@
     "max-classes-per-file": "error",
     "no-alert": "error",
     "no-caller": "error",
-    "no-empty-function": ["error", { "allow": ["constructors"] }],
     "no-eval": "error",
     "no-extend-native": "error",
     "no-extra-bind": "error",
