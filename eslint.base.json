@@ -68,7 +68,10 @@
     ],
     "@typescript-eslint/explicit-member-accessibility": [
       "error",
-      { "properties": "explicit" }
+      {
+        "accessibility": "explicit",
+        "overrides": { "properties": "explicit" }
+      }
     ],
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/member-ordering": [
@@ -100,30 +103,28 @@
     "@typescript-eslint/method-signature-style": "error",
     "@typescript-eslint/naming-convention": [
       "error",
-      [
-        {
-          "selector": "default",
-          "format": ["camelCase"],
-          "leadingUnderscore": "allow",
-          "trailingUnderscore": "allow"
-        },
-        {
-          "selector": "variable",
-          "format": ["camelCase", "UPPER_CASE"],
-          "leadingUnderscore": "allow",
-          "trailingUnderscore": "allow"
-        },
-        {
-          "selector": "typeLike",
-          "format": ["PascalCase"]
-        },
-        {
-          "selector": "memberLike",
-          "modifiers": ["private"],
-          "format": ["camelCase"],
-          "leadingUnderscore": "require"
-        }
-      ]
+      {
+        "selector": "default",
+        "format": ["camelCase"],
+        "leadingUnderscore": "allow",
+        "trailingUnderscore": "allow"
+      },
+      {
+        "selector": "variable",
+        "format": ["camelCase", "UPPER_CASE"],
+        "leadingUnderscore": "allow",
+        "trailingUnderscore": "allow"
+      },
+      {
+        "selector": "typeLike",
+        "format": ["PascalCase"]
+      },
+      {
+        "selector": "memberLike",
+        "modifiers": ["private"],
+        "format": ["camelCase"],
+        "leadingUnderscore": "require"
+      }
     ],
     "@typescript-eslint/no-dynamic-delete": "error",
     "@typescript-eslint/no-explicit-any": "off",
