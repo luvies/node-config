@@ -3,7 +3,6 @@
   "parser": "@typescript-eslint/parser",
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "prettier",
@@ -11,45 +10,53 @@
   ],
   "rules": {
     "no-console": "error",
+    "no-useless-backreference": "error",
 
     "curly": ["error", "all"],
+    "default-case-last": "error",
     "eqeqeq": "error",
     "max-classes-per-file": "error",
     "no-alert": "error",
     "no-caller": "error",
+    "no-constructor-return": "error",
     "no-eval": "error",
     "no-extend-native": "error",
     "no-extra-bind": "error",
     "no-floating-decimal": "error",
     "no-implicit-coercion": "error",
     "no-labels": "error",
+    "no-multi-spaces": "error",
     "no-new": "error",
     "no-new-func": "error",
     "no-new-wrappers": "error",
     "no-octal-escape": "error",
     "no-return-assign": "error",
-    "no-return-await": "error",
+    "no-script-url": "error",
     "no-self-compare": "error",
     "no-sequences": "error",
-    "no-throw-literal": "error",
     "no-unmodified-loop-condition": "error",
     "no-useless-call": "error",
     "no-useless-concat": "error",
     "no-void": "error",
     "prefer-promise-reject-errors": "error",
     "radix": ["error", "always"],
+    "yoda": "error",
 
     "no-shadow": "error",
 
     "no-confusing-arrow": ["error", { "allowParens": false }],
     "no-duplicate-imports": "error",
+    "no-var": "error",
     "prefer-numeric-literals": "error",
+    "prefer-rest-params": "error",
+    "prefer-spread": "error",
     "prefer-template": "error",
     "symbol-description": "error",
 
     "sort-imports-es6-autofix/sort-imports-es6": "error",
 
     "@typescript-eslint/array-type": ["error", { "default": "array-simple" }],
+    "@typescript-eslint/consistent-type-assertions": "error",
     "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
     "@typescript-eslint/explicit-function-return-type": [
       "error",
@@ -59,8 +66,11 @@
         "allowHigherOrderFunctions": true
       }
     ],
+    "@typescript-eslint/explicit-member-accessibility": [
+      "error",
+      { "properties": "explicit" }
+    ],
     "@typescript-eslint/interface-name-prefix": "off",
-    "@typescript-eslint/member-naming": ["error", { "private": "^_" }],
     "@typescript-eslint/member-ordering": [
       "error",
       {
@@ -87,12 +97,62 @@
         ]
       }
     ],
+    "@typescript-eslint/method-signature-style": "error",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      [
+        {
+          "selector": "default",
+          "format": ["camelCase"],
+          "leadingUnderscore": "allow",
+          "trailingUnderscore": "allow"
+        },
+        {
+          "selector": "variable",
+          "format": ["camelCase", "UPPER_CASE"],
+          "leadingUnderscore": "allow",
+          "trailingUnderscore": "allow"
+        },
+        {
+          "selector": "typeLike",
+          "format": ["PascalCase"]
+        },
+        {
+          "selector": "memberLike",
+          "modifiers": ["private"],
+          "format": ["camelCase"],
+          "leadingUnderscore": "require"
+        }
+      ]
+    ],
+    "@typescript-eslint/no-dynamic-delete": "error",
     "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-floating-promises": "error",
+    "@typescript-eslint/no-invalid-void-type": "error",
     "@typescript-eslint/no-parameter-properties": "off",
     "@typescript-eslint/no-require-imports": "error",
+    "@typescript-eslint/no-throw-literal": "error",
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
+    "@typescript-eslint/no-unnecessary-condition": "error",
+    "@typescript-eslint/no-unnecessary-qualifier": "error",
+    "@typescript-eslint/prefer-for-of": "error",
+    "@typescript-eslint/prefer-includes": "error",
+    "@typescript-eslint/prefer-nullish-coalescing": "error",
+    "@typescript-eslint/prefer-optional-chain": "error",
+    "@typescript-eslint/prefer-string-starts-ends-with": "error",
+    "@typescript-eslint/restrict-template-expressions": [
+      "error",
+      {
+        "allowNumber": true,
+        "allowBoolean": true,
+        "allowNullish": true
+      }
+    ],
+
+    "@typescript-eslint/default-param-last": "error",
+    "@typescript-eslint/no-invalid-this": "error",
+    "@typescript-eslint/no-unused-expressions": "error",
     "@typescript-eslint/no-useless-constructor": "error",
-    "@typescript-eslint/prefer-for-of": "error"
+    "@typescript-eslint/return-await": "error"
   },
   "overrides": [
     {
