@@ -124,6 +124,10 @@
         "modifiers": ["private"],
         "format": ["camelCase"],
         "leadingUnderscore": "require"
+      },
+      {
+        "selector": "enumMember",
+        "format": ["PascalCase"]
       }
     ],
     "@typescript-eslint/no-dynamic-delete": "error",
