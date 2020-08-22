@@ -71,6 +71,7 @@ Use the following config to extend the shared one:
 For the React-specific config, you need the following extra packages (they are not added as peer dependencies since only React projects will use them):
 
 - `eslint-plugin-react`
+- `eslint-plugin-react-hooks`
 
 You then need to extend the react config:
 

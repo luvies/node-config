@@ -10,7 +10,12 @@
       "version": "detect"
     }
   },
-  "extends": ["./eslint.base.json", "plugin:react/recommended", "prettier/react"],
+  "extends": [
+    "./eslint.base.json",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier/react"
+  ],
   "rules": {
     "react/button-has-type": "error",
     "react/forbid-component-props": "error",
