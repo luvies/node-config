@@ -1,21 +1,21 @@
 {
   "compilerOptions": {
-    "target": "es2018",
-    "lib": ["es2018"],
+    "target": "es2019",
+    "lib": ["es2019"],
     "sourceMap": true,
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
+    "noFallthroughCasesInSwitch": true,
     "importHelpers": true,
     "esModuleInterop": true,
-    "strictNullChecks": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strict": true,
     "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
-    "incremental": true
+    "isolatedModules": true,
+    "importsNotUsedAsValues": "error"
   }
 }
