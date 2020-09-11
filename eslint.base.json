@@ -3,6 +3,9 @@
   "parser": "@typescript-eslint/parser",
   "extends": [
     "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "prettier",
@@ -53,7 +56,23 @@
     "prefer-template": "error",
     "symbol-description": "error",
 
-    "sort-imports-es6-autofix/sort-imports-es6": "error",
+    "import/no-absolute-path": "error",
+    "import/no-webpack-loader-syntax": "error",
+    "import/no-self-import": "error",
+    "import/no-cycle": ["error", { "ignoreExternal": true }],
+    "import/no-useless-path-segments": "error",
+
+    "import/no-deprecated": "error",
+    "import/no-mutable-exports": "error",
+
+    "import/extensions": "error",
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        "alphabetize": { "order": "asc", "caseInsensitive": true }
+      }
+    ],
 
     "@typescript-eslint/array-type": ["error", { "default": "array-simple" }],
     "@typescript-eslint/consistent-type-assertions": "error",

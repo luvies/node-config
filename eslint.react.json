@@ -14,6 +14,7 @@
     "./eslint.base.json",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:import/react",
     "prettier/react"
   ],
   "rules": {
