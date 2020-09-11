@@ -1,5 +1,5 @@
 {
-  "plugins": ["@typescript-eslint", "prettier", "sort-imports-es6-autofix"],
+  "plugins": ["@typescript-eslint", "prettier", "import"],
   "parser": "@typescript-eslint/parser",
   "extends": [
     "eslint:recommended",
